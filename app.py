@@ -18,7 +18,7 @@ if api_key:
     Focus on legal, financial, and psychological accuracy. No anachronisms.
     """
     
-    model = genai.GenerativeModel('gemini-1.5-pro', system_instruction=system_instruction)
+model = genai.GenerativeModel('gemini-3-pro-preview', system_instruction=system_instruction)
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
