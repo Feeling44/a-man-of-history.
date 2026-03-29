@@ -17,7 +17,7 @@ if api_key:
     Co-author ultra-realistic historical fiction in Formal Arabic and High-Register English.
     Focus on legal, financial, and psychological accuracy. No anachronisms.
     """
-    model = genai.GenerativeModel('gemini-3-flash-preview', system_instruction=system_instruction)
+    model = genai.GenerativeModel('gemini-3.1-flash-lite-preview', system_instruction=system_instruction)
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
